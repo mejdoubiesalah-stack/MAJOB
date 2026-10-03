@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MAJOB | فرص عمل وشركات موثوقة في المغرب</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- الهيدر -->
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="MAJOB">
+        <span class="brand-mark">M</span>
+        <span>
+          <strong>MAJOB</strong>
+          <small>Morocco Jobs</small>
+        </span>
+      </a>
+      <nav class="nav" aria-label="التنقل الرئيسي">
+        <a href="#how">كيف يعمل</a>
+        <a href="#jobs">الوظائف</a>
+        <a href="#verify">التوثيق</a>
+      </nav>
+      <button class="primary-btn" data-open="verifyWorker">وثق حسابك</button>
+    </header>
+
+    <!-- قسم البطل -->
+    <main id="home">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">منصة مغربية تجمع الشركات والعمال</p>
+          <h1 id="hero-title">MAJOB</h1>
+          <p class="hero-text">
+            MAJOB يربط الشركات والزبناء بعمال حقيقيين وموثقين في المغرب. الهوية، الخبرة، والدبلوم يتم فحصها قبل قبول العامل.
+          </p>
+          <div class="hero-numbers">
+            <article><strong data-count="1250">0</strong><span>شركة تبحث عن عمال</span></article>
+            <article><strong data-count="18400">0</strong><span>عامل يبحث عن عمل</span></article>
+            <article><strong data-count="12">0</strong><span>مدينة مغربية</span></article>
+          </div>
+          <div class="hero-actions">
+            <a class="primary-btn" href="#jobs">ابحث عن عمل</a>
+            <button class="secondary-btn" data-open="fastJob">أحتاج خدمة</button>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img src="majob-handshake-hero.png" alt="مصافحة بين صاحب شركة وعامل" />
+        </div>
+      </section>
+
+      <!-- قسم كيف يعمل -->
+      <section class="how-section" id="how">
+        <div class="section-heading">
+          <p class="eyebrow">سهل وواضح</p>
+          <h2>كيف يعمل MAJOB؟</h2>
+        </div>
+        <div class="steps">
+          <article><strong>1</strong><h3>اختر نوع الطلب</h3><p>خدمة سريعة أو عمل طويل.</p></article>
+          <article><strong>2</strong><h3>شاهد العمال الموثقين</h3><p>هوية مؤكدة وخبرة واضحة.</p></article>
+          <article><strong>3</strong><h3>اتفق قبل البداية</h3><p>السعر والوقت والمكان واضحين.</p></article>
+        </div>
+      </section>
+
+      <!-- قسم أنواع العمل -->
+      <section class="job-types">
+        <div class="section-heading">
+          <p class="eyebrow">نوعان من العمل</p>
+          <h2>خدمة سريعة وعمل طويل</h2>
+        </div>
+        <div class="type-cards">
+          <article class="type-card fast">
+            <span class="type-label">خدمة سريعة</span>
+            <h3>مثال: سباك، كهربائي</h3>
+            <button class="secondary-btn" data-open="fastJob">اطلب خدمة سريعة</button>
+          </article>
+          <article class="type-card long">
+            <span class="type-label">عمل طويل</span>
+            <h3>مثال: مطعم يبحث عن نادل</h3>
+            <button class="primary-btn" data-open="postJob">انشر عمل طويل</button>
+          </article>
+        </div>
+      </section>
+
+      <!-- قسم التوثيق -->
+      <section class="verify-section" id="verify">
+        <div class="section-heading">
+          <p class="eyebrow">الأمان أولا</p>
+          <h2>لا يعمل أي شخص قبل التحقق منه</h2>
+        </div>
+        <div class="verify-grid">
+          <article><span>01</span><h3>هوية حقيقية</h3></article>
+          <article><span>02</span><h3>دبلوم أو شهادة</h3></article>
+          <article><span>03</span><h3>هاتف و Gmail</h3></article>
+          <article><span>04</span><h3>شارة موثق</h3></article>
+        </div>
+        <button class="primary-btn" data-open="verifyWorker">ابدأ التوثيق</button>
+      </section>
+    </main>
+
+    <!-- الفوتر -->
+    <footer>
+      <p>© 2026 MAJOB - جميع الحقوق محفوظة</p>
+      <p><a href="mailto:info@majob.ma">تواصل معنا</a> | <a href="#verify">توثيق العمال</a></p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
