@@ -1,106 +1,54 @@
-<!doctype html>
-<html lang="ar" dir="rtl">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>MAJOB | فرص عمل وشركات موثوقة في المغرب</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <!-- الهيدر -->
-    <header class="topbar">
-      <a class="brand" href="#home" aria-label="MAJOB">
-        <span class="brand-mark">M</span>
-        <span>
-          <strong>MAJOB</strong>
-          <small>Morocco Jobs</small>
-        </span>
-      </a>
-      <nav class="nav" aria-label="التنقل الرئيسي">
-        <a href="#how">كيف يعمل</a>
-        <a href="#jobs">الوظائف</a>
-        <a href="#verify">التوثيق</a>
-      </nav>
-      <button class="primary-btn" data-open="verifyWorker">وثق حسابك</button>
-    </header>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>MAJOB - منصة خدمات</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <section class="calculator">
+      <div class="card">
+        <label>
+          ثمن الخدمة بالدرهم
+          <input id="price" type="number" min="0" value="500" />
+        </label>
+        <label>
+          عمولة المنصة
+          <select id="commission">
+            <option value="5">5%</option>
+            <option value="10" selected>10%</option>
+            <option value="15">15%</option>
+            <option value="20">20%</option>
+          </select>
+        </label>
+        <button class="btn" id="calculate">احسب</button>
+      </div>
 
-    <!-- قسم البطل -->
-    <main id="home">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow">منصة مغربية تجمع الشركات والعمال</p>
-          <h1 id="hero-title">MAJOB</h1>
-          <p class="hero-text">
-            MAJOB يربط الشركات والزبناء بعمال حقيقيين وموثقين في المغرب. الهوية، الخبرة، والدبلوم يتم فحصها قبل قبول العامل.
-          </p>
-          <div class="hero-numbers">
-            <article><strong data-count="1250">0</strong><span>شركة تبحث عن عمال</span></article>
-            <article><strong data-count="18400">0</strong><span>عامل يبحث عن عمل</span></article>
-            <article><strong data-count="12">0</strong><span>مدينة مغربية</span></article>
-          </div>
-          <div class="hero-actions">
-            <a class="primary-btn" href="#jobs">ابحث عن عمل</a>
-            <button class="secondary-btn" data-open="fastJob">أحتاج خدمة</button>
-          </div>
+      <div class="card result">
+        <div class="money-row">
+          <span>💰 المبلغ المدفوع</span>
+          <strong id="total">500 MAD</strong>
         </div>
-        <div class="hero-media">
-          <img src="majob-handshake-hero.png" alt="مصافحة بين صاحب شركة وعامل" />
+        <div class="money-row">
+          <span>🏢 ربح MAJOB</span>
+          <strong id="platform">50 MAD</strong>
         </div>
-      </section>
+        <div class="money-row">
+          <span>👷 مبلغ العامل</span>
+          <strong id="worker">450 MAD</strong>
+        </div>
+        <p class="card notice">
+          في المغرب يمكنك البدء ببوابة دفع محلية مثل CMI أو Payzone، ثم تدفع للعامل لاحقًا بعد خصم العمولة.
+        </p>
+      </div>
+    </section>
 
-      <!-- قسم كيف يعمل -->
-      <section class="how-section" id="how">
-        <div class="section-heading">
-          <p class="eyebrow">سهل وواضح</p>
-          <h2>كيف يعمل MAJOB؟</h2>
-        </div>
-        <div class="steps">
-          <article><strong>1</strong><h3>اختر نوع الطلب</h3><p>خدمة سريعة أو عمل طويل.</p></article>
-          <article><strong>2</strong><h3>شاهد العمال الموثقين</h3><p>هوية مؤكدة وخبرة واضحة.</p></article>
-          <article><strong>3</strong><h3>اتفق قبل البداية</h3><p>السعر والوقت والمكان واضحين.</p></article>
-        </div>
-      </section>
+    <footer>
+      <strong>MAJOB</strong> - منصة خدمات مغربية بنظام عمولة.
+    </footer>
+  </main>
 
-      <!-- قسم أنواع العمل -->
-      <section class="job-types">
-        <div class="section-heading">
-          <p class="eyebrow">نوعان من العمل</p>
-          <h2>خدمة سريعة وعمل طويل</h2>
-        </div>
-        <div class="type-cards">
-          <article class="type-card fast">
-            <span class="type-label">خدمة سريعة</span>
-            <h3>مثال: سباك، كهربائي</h3>
-            <p>الزبون يكتب المشكلة أو يرسل صورة، والمهني يرد بالتفاصيل.</p>
-            <button class="secondary-btn" data-open="fastJob">اطلب خدمة سريعة</button>
-          </article>
-          <article class="type-card long">
-            <span class="type-label">عمل طويل</span>
-            <h3>مثال: مطعم يبحث عن نادل</h3>
-            <p>الشركة تنشر وظيفة طويلة المدة وتستقبل طلبات العمال المناسبين.</p>
-            <button class="primary-btn" data-open="postJob">انشر عمل طويل</button>
-          </article>
-        </div>
-      </section>
-
-      <!-- قسم البحث -->
-      <section class="search-panel" id="jobs">
-        <div class="section-heading">
-          <p class="eyebrow">البحث الذكي</p>
-          <h2>اختر المدينة والمجال المناسب</h2>
-        </div>
-        <form class="filters" id="filters">
-          <label><span>الكلمة المفتاحية</span><input id="keyword" type="search" placeholder="مثال: نادل، سائق، مطور" /></label>
-          <label><span>المدينة</span><select id="city"><option>كل المدن</option><option>الدار البيضاء</option><option>الرباط</option><option>مراكش</option></select></label>
-          <label><span>المجال</span><select id="category"><option>كل المجالات</option><option>مطاعم</option><option>خدمات منزلية</option></select></label>
-          <label><span>نوع العمل</span><select id="type"><option>كل الأنواع</option><option>خدمة سريعة</option><option>عمل طويل</option></select></label>
-          <button class="primary-btn">ابحث</button>
-        </form>
-      </section>
-
-      <!-- قسم التوثيق -->
-      <section class="verify-section" id="verify">
-        <div class="section-heading">
-          <p class="eyebrow">الأمان أولا</p>
-          <h2>لا يعمل أي شخص قبل
+  <script src="script.js"></script>
+</body>
+</html>
