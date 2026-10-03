@@ -72,38 +72,35 @@
           <article class="type-card fast">
             <span class="type-label">خدمة سريعة</span>
             <h3>مثال: سباك، كهربائي</h3>
+            <p>الزبون يكتب المشكلة أو يرسل صورة، والمهني يرد بالتفاصيل.</p>
             <button class="secondary-btn" data-open="fastJob">اطلب خدمة سريعة</button>
           </article>
           <article class="type-card long">
             <span class="type-label">عمل طويل</span>
             <h3>مثال: مطعم يبحث عن نادل</h3>
+            <p>الشركة تنشر وظيفة طويلة المدة وتستقبل طلبات العمال المناسبين.</p>
             <button class="primary-btn" data-open="postJob">انشر عمل طويل</button>
           </article>
         </div>
+      </section>
+
+      <!-- قسم البحث -->
+      <section class="search-panel" id="jobs">
+        <div class="section-heading">
+          <p class="eyebrow">البحث الذكي</p>
+          <h2>اختر المدينة والمجال المناسب</h2>
+        </div>
+        <form class="filters" id="filters">
+          <label><span>الكلمة المفتاحية</span><input id="keyword" type="search" placeholder="مثال: نادل، سائق، مطور" /></label>
+          <label><span>المدينة</span><select id="city"><option>كل المدن</option><option>الدار البيضاء</option><option>الرباط</option><option>مراكش</option></select></label>
+          <label><span>المجال</span><select id="category"><option>كل المجالات</option><option>مطاعم</option><option>خدمات منزلية</option></select></label>
+          <label><span>نوع العمل</span><select id="type"><option>كل الأنواع</option><option>خدمة سريعة</option><option>عمل طويل</option></select></label>
+          <button class="primary-btn">ابحث</button>
+        </form>
       </section>
 
       <!-- قسم التوثيق -->
       <section class="verify-section" id="verify">
         <div class="section-heading">
           <p class="eyebrow">الأمان أولا</p>
-          <h2>لا يعمل أي شخص قبل التحقق منه</h2>
-        </div>
-        <div class="verify-grid">
-          <article><span>01</span><h3>هوية حقيقية</h3></article>
-          <article><span>02</span><h3>دبلوم أو شهادة</h3></article>
-          <article><span>03</span><h3>هاتف و Gmail</h3></article>
-          <article><span>04</span><h3>شارة موثق</h3></article>
-        </div>
-        <button class="primary-btn" data-open="verifyWorker">ابدأ التوثيق</button>
-      </section>
-    </main>
-
-    <!-- الفوتر -->
-    <footer>
-      <p>© 2026 MAJOB - جميع الحقوق محفوظة</p>
-      <p><a href="mailto:info@majob.ma">تواصل معنا</a> | <a href="#verify">توثيق العمال</a></p>
-    </footer>
-
-    <script src="app.js"></script>
-  </body>
-</html>
+          <h2>لا يعمل أي شخص قبل
