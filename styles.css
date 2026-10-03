@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+body {
+  font-family: 'Tajawal', sans-serif;
+  margin: 0;
+  background: #f8f8f8;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* الهيدر */
+.topbar {
+  background: #008000; /* أخضر */
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.topbar .brand strong {
+  font-size: 1.3rem;
+  color: #ff0000; /* أحمر */
+}
+
+.nav a {
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+.nav a:hover {
+  color: #ffcc00; /* لمسة ذهبية */
+}
+
+/* الأزرار */
+.primary-btn {
+  background: #ff0000; /* أحمر */
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.primary-btn:hover {
+  background: #cc0000;
+}
+
+.secondary-btn {
+  background: #fff;
+  color: #008000;
+  border: 2px solid #008000;
+  padding: 0.7rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.secondary-btn:hover {
+  background: #008000;
+  color: #fff;
+}
+
+/* قسم البطل */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(to right, #008000, #ff0000);
+  color: #fff;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.hero-text {
+  max-width: 500px;
+}
+
+/* الأقسام */
+.section-heading h2 {
+  color: #008000;
+}
+.eyebrow {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+/* الفوتر */
+footer {
+  background: #ff0000;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
